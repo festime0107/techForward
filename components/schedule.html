@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Conference Schedule</title>
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="../js/schedule.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h2>TechForward 2024</h2>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./schedule.html">Schedule</a></li>
+                <li><a href="./speakers.html">Speakers</a></li>
+                <li><a href="./registration.html">Registration</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="schedule-container">
+            <h1>Conference Schedule</h1>
+            <p>Explore the detailed agenda for TechForward 2024.</p>
+            <div class="tabs">
+                <button onclick="showSchedule('day1')">Day 1</button>
+                <button onclick="showSchedule('day2')">Day 2</button>
+            </div>
+            <div id="day1" class="schedule-table">
+                <!-- Day 1 Schedule Table -->
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Session</th>
+                            <th>Speaker</th>
+                            <th>Location</th>
+                            <th>Type</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>09:00 - 10:00</td>
+                            <td>Opening Keynote: The Future of Robotics</td>
+                            <td>Emily Hart</td>
+                            <td>Main Hall</td>
+                            <td><span class="badge keynote">Keynote</span></td>
+                        </tr>
+                        <tr>
+                            <td>10:00 - 10:15</td>
+                            <td>Coffee Break</td>
+                            <td></td>
+                            <td></td>
+                            <td><span class="badge coffee">Break</span></td>
+                        </tr>
+                        <!-- Add more sessions here as needed -->
+                    </tbody>
+                </table>
+            </div>
+            <div id="day2" class="schedule-table" style="display: none;">
+                <!-- Day 2 Schedule Table -->
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Session</th>
+                            <th>Speaker</th>
+                            <th>Location</th>
+                            <th>Type</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>09:00 - 10:00</td>
+                            <td>Innovations in Environmental Tech</td>
+                            <td>Christopher Brooks</td>
+                            <td>Main Hall</td>
+                            <td><span class="badge keynote">Keynote</span></td>
+                        </tr>
+                        <tr>
+                            <td>10:00 - 10:15</td>
+                            <td>Coffee Break</td>
+                            <td></td>
+                            <td></td>
+                            <td><span class="badge coffee">Break</span></td>
+                        </tr>
+                        <!-- Add more sessions here as needed -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            
+            <div class="social-links">
+                <p>Follow us on social media:</p>
+                <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+                <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+            </div>
+            
+            <div class="quick-links">
+                <p>Quick Links:</p>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../components/about.html">About</a></li>
+                    <li><a href="../components/schedule.html">Schedule</a></li>
+                    <li><a href="../components/speakers.html">Speakers</a></li>
+                    <li><a href="../components/registration.html">Registration</a></li>
+                    <li><a href="../components/contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="copyright">
+                &copy; 2024 Tech Conference. All rights reserved.
+            </div>
+            <div class="back-to-top">
+                <a href="#top">Back to top</a>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        function showSchedule(day) {
+            document.getElementById('day1').style.display = 'none';
+            document.getElementById('day2').style.display = 'none';
+            document.getElementById(day).style.display = 'block';
+        }
+    </script>
+    
+</body>
+</html>

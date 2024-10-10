@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Conference Registration</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h2>TechForward 2024</h2>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./schedule.html">Schedule</a></li>
+                <li><a href="./speakers.html">Speakers</a></li>
+                <li><a href="./registration.html">Registration</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="register">
+        <div class="register-form">
+            <h1>Register for TechForward 2024</h1>
+            <h5>Fill in the details below to secure your spot</h5>
+    
+            <p>Name</p>
+            <input type="text" placeholder="Your Name" required>
+    
+            <p>Email Address</p>
+            <input type="email" placeholder="Your Email Address" required>
+    
+            <p>Phone Number</p>
+            <input type="tel" placeholder="Your Phone Number" required>
+    
+            <p>Attendance Type</p>
+            <div class="radio-group">
+                <label><input type="radio" name="attendance" value="in-person" required> In-person</label>
+                <label><input type="radio" name="attendance" value="virtual" required> Virtual</label>
+            </div>
+    
+            <p>Session Interest</p>
+            <select required>
+                <option value="">Select a Session</option>
+                <option value="session1">Session 1</option>
+                <option value="session2">Session 2</option>
+                <option value="session3">Session 3</option>
+            </select>
+    
+            <p>Number of Tickets</p>
+            <input type="number" placeholder="Number of Tickets" required>
+    
+            <p>Arrival Date</p>
+            <input type="date" placeholder="MM/DD/YYYY" required>
+    
+            <p>Additional Information</p>
+            <textarea placeholder="Any additional information"></textarea>
+    
+            <button type="submit">Submit</button>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <p>Follow us on social media:</p>
+                <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+                <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+            </div>
+            <div class="quick-links">
+                <p>Quick Links:</p>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../components/about.html">About</a></li>
+                    <li><a href="../components/schedule.html">Schedule</a></li>
+                    <li><a href="../components/speakers.html">Speakers</a></li>
+                    <li><a href="../components/registration.html">Registration</a></li>
+                    <li><a href="../components/contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="copyright">
+                &copy; 2024 Tech Conference. All rights reserved.
+            </div>
+            <div class="back-to-top">
+                <a href="#top">Back to top</a>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/form-validation.js"></script>
+</body>
+</html>
